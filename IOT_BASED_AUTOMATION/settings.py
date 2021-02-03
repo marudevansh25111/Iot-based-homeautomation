@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'IOT_BASED_AUTOMATION.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'pythonDB',
+        'NAME':'devansh',
         'USER':'root',
         'PASSWORD':'',
         'HOST':'localhost',
