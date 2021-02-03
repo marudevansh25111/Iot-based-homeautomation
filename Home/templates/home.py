@@ -1,7 +1,7 @@
 #!C:/Users/Gaurav Mori/AppData/Local/Microsoft/WindowsApps/python.exe
-import cgi
 print("Content-type: text/html")
 print()
+import cgi
 
 
 form =cgi.FieldStorage()
