@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Home',
     'loginmodule',
+    'firstdbtest',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'IOT_BASED_AUTOMATION.urls'
 TEMPLATES = [
 {
 'BACKEND':'django.template.backends.django.DjangoTemplates',
-'DIRS': [],
+'DIRS': [os.path.join(BASE_DIR, 'templates')],
 'APP_DIRS': True,
 'OPTIONS': {
 'context_processors': [
@@ -80,7 +81,7 @@ WSGI_APPLICATION = 'IOT_BASED_AUTOMATION.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'devansh',
+        'NAME':'pythondb',
         'USER':'root',
         'PASSWORD':'',
         'HOST':'localhost',
