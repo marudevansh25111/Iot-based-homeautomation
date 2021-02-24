@@ -14,7 +14,11 @@ from . import views
 
 # Create your views here.
 
-
+dob=None
+def home(request):
+    return render(request,'firstdbtest/home.py')
+def login(request):
+    return render(request,'firstdbtest/login.html')
 def index(request):
     return render(request,'firstdbtest/addstudentinfo.html')
 def getstudentinfo(request):
@@ -34,3 +38,4 @@ def addsuccess(request):
     return render(request,'firstdbtest/addrecord.html')
 class StudentListView(generic.ListView):
     model = Student
+

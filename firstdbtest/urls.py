@@ -9,5 +9,7 @@ urlpatterns = [
         path('add', views.addstudentinfo, name='add'),
         path('view', views.getstudentinfo, name='add'),
         path('print', views.printinfo, name='print'),
+        path('login', views.login, name='login'),
+        path('home', views.home, name='home'),
         url('students', views.StudentListView.as_view(), name ='students'),
 ]
