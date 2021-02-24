@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Home',
     'loginmodule',
-    'firstdbtest',
+    'Automation',
 ]
 
 MIDDLEWARE = [

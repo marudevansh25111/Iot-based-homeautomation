@@ -5,7 +5,7 @@ from django.shortcuts import redirect
 from django.contrib import auth
 from django.contrib.auth import get_user_model
 from django.template.context_processors import csrf
-from firstdbtest.models import Student
+from Automation.models import Student
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render
 from django.db import connection
@@ -16,26 +16,26 @@ from . import views
 
 dob=None
 def home(request):
-    return render(request,'firstdbtest/home.py')
+    return render(request,'Automation/home.py')
 def login(request):
-    return render(request,'firstdbtest/login.html')
+    return render(request,'Automation/login.html')
 def index(request):
-    return render(request,'firstdbtest/addstudentinfo.html')
+    return render(request,'Automation/addstudentinfo.html')
 def getstudentinfo(request):
     c = {}
     c.update(csrf(request))
-    return render(request,'firstdbtest/addstudentinfo.html', c)
+    return render(request,'Automation/addstudentinfo.html', c)
 def addstudentinfo(request):
     sname = request.POST.get('studentname')
     sdate = request.POST.get('birthdate')
     s = Student(name = sname, dob=sdate)
     s.save()
-    return render(request,'firstdbtest/addrecord.html')
+    return render(request,'Automation/addrecord.html')
 def printinfo(request):
     records=Student.objects.all()
-    return render(request,'firstdbtest/student_list.html',{'users':records})
+    return render(request,'Automation/student_list.html',{'users':records})
 def addsuccess(request):
-    return render(request,'firstdbtest/addrecord.html')
+    return render(request,'Automation/addrecord.html')
 class StudentListView(generic.ListView):
     model = Student
 

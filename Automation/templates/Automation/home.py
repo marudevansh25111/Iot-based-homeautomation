@@ -18,8 +18,10 @@ if name1=="user1" and passw=="user1":
 
      print('<html>')
      print('  <head> ')
-   
-     print('    <meta http-equiv="refresh" content="0;url='+str(redirectURL)+'" />') 
+     if opt=="dash" :
+             print('    <meta http-equiv="refresh" content="0;url=http://169.254.81.214:1880/ui/#!/0?socketid=NiUOP-obSz3agwMRAAAE" />') 
+     if opt=="work" :
+           print('    <meta http-equiv="refresh" content="0;url=http://169.254.81.214:1880/#flow/c20877c4.54baa8" />')
      print("  <link rel = 'icon' href = 'img/pi.png' type = 'image/x-icon'> ")
      print(' <title>IOT Home Automation</title> </head>')
      print('</html>')

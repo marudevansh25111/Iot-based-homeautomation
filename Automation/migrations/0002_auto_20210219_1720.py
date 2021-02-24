@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('firstdbtest', '0001_initial'),
+        ('Automation', '0001_initial'),
     ]
 
     operations = [
