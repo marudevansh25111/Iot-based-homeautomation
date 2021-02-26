@@ -1,0 +1,40 @@
+
+<html>
+<head>
+     <title>User Login</title>
+     {% load static %}
+     
+    
+<link rel="stylesheet" href="{% static 'style.css' %}"/>
+
+</head>
+
+<body>
+     
+<ul>
+     <li><a href="#">Home</a></li>
+     <li><a href="AboutUs">About Us</a></li>
+     <li><a href="#">Help</a></li>
+</ul>
+<form  action="home" method ="POST">
+     {% csrf_token %}
+<table >
+<div class="logo"></div>
+<div class="fm">
+
+<b>IOT Based Home Automation</b>
+</div>
+<tr> <td > <lable> Username :</lable><input type="text" name="name" placeholder="Username" required/></td></tr>
+<tr> <td> <lable> Password :</lable><input type="password" name="password" placeholder="password" required/></td></tr>
+<tr > <td><lable  >DashBoard:</lable><input type="radio" name="iot" value="dash"/> 
+     <lable> WorkBanch:</lable><input type="radio" name="iot" value="work"/></td></tr>
+<tr> <td> <input type="submit"  value="Login" name="submit" placeholder="Login"/>
+<input type="reset"  value="Reset" name="reset" placeholder="Reset"/>   
+<input type="button" onclick="window.location.href='#';" value="New User" />
+ </td></tr>
+
+ 
+</table>
+</form>
+<body>
+</html>
