@@ -9,7 +9,9 @@ def login(request):
     return render(request,'login.html')
 
 def home(request):
-    return render(request,'home.py')
+    return render(request,'home.html')
 
 def AboutUs(request):
     return render(request,'us.html')
+def dashboard(request):
+    return render(request,'dashboard.html')
