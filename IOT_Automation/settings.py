@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'IOT_Automation.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'pytest',
+        'NAME':'python',
         'USER':'root',
         'PASSWORD':'',
         'HOST':'localhost',
@@ -129,5 +129,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+   
+]
 
